@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec08cbc0-fe25-40b8-b6b2-f4d21b0bd1ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php" afterPath="$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php" />
     </list>
     <ignored path="WPWidget.iws" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="class-widget-job_listing-map.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2584746" vertical-offset="1017" max-vertical-offset="1965">
-              <caret line="80" column="84" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.2584746" vertical-offset="1017" max-vertical-offset="1950">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -376,8 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2584746" vertical-offset="1017" max-vertical-offset="1965">
-          <caret line="80" column="84" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.2584746" vertical-offset="1017" max-vertical-offset="1950">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
