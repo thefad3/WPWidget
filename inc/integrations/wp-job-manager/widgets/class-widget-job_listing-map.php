@@ -77,7 +77,10 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
 					<a href="<?php echo $listify_job_manager->template->google_maps_url(); ?>" class="listing-contact-map-clickbox"></a>
-					<div id="listing-contact-map"></div>
+
+                    <?php echo $listify_job_manager->template->google_maps_url(); ?>
+
+                    <div id="listing-contact-map"></div>
 				</div>
 			<?php endif; ?>
 
