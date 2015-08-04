@@ -40,8 +40,8 @@
       <file leaf-file-name="class-widget-job_listing-map.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2584746" vertical-offset="1017" max-vertical-offset="1950">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.27966103" vertical-offset="987" max-vertical-offset="1920">
+              <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -374,8 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2584746" vertical-offset="1017" max-vertical-offset="1950">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.27966103" vertical-offset="987" max-vertical-offset="1920">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
           <folding />
         </state>
       </provider>
