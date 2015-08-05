@@ -76,43 +76,49 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 		echo $before_widget;
 		?>
 
+        <script type="text/javascript">
+
+            function getDirections(){
+
+                var data = document.getElementById('address').elements[0].value;
+                console.log('TestBruh', ' ', data);
+
+                var xhr = new XMLHttpRequest();
+                //xhr.open("POST", "#", false);
+                xhr.open("GET", "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q="+data, false);
+                xhr.send();
+
+                console.log(xhr);
+                console.log(xhr.statusText);
+
+            }
+
+
+        </script>
+
 
 
 		<div class="row">
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
 					<a href="<?php echo $listify_job_manager->template->google_maps_url(); ?>" class="listing-contact-map-clickbox"></a>
+
+					<div id="listing-contact-map"></div>
+
                     <?php
-                    $service_url = 'https://maps.googleapis.com/maps/api/directions/json?origin=Florida&destination=RhodeIsland&key=AIzaSyBLzancw8yODD8ssXBNUJ-C0R0OsMyUvoo';
-                    $apiData = file_get_contents($service_url);
-                    $json = json_decode($apiData);
 
-                        $data = $json->routes[0];
-                        foreach($data->legs[0]->steps as $item){
-                            echo $item->html_instructions;
-                            echo $item->html_instructions;
-
-                        }
 
 
                     ?>
 
-					<div id="listing-contact-map"></div>
 
 					<div>
-						<form onchange="getAddress();">
+						<form onchange="getDirections();" id="address">
                             <div>
-                                <label>Street</label>
-                                <input type="text" id="street" width="100%" placeholder="Street">
+                                <label>Enter your Address:</label>
+                                <input type="text" width="100%" placeholder="Street">
                             </div>
-                            <div>
-                                <label>City</label>
-                                <input type="text" id="city" placeholder="City">
-                            </div>
-                            <div>
-                                <label>State</label>
-                                <input type="text" id="state" placeholder="State">
-                            </div>
+
 						</form>
 					</div>
 				</div>

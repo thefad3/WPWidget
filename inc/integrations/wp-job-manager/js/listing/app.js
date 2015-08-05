@@ -1,11 +1,11 @@
 (function() {
 
 
-
   var ListifySingleMap, initialize,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   ListifySingleMap = (function() {
+
 
       function ListifySingleMap() {
       this.setMarker = __bind(this.setMarker, this);
@@ -104,6 +104,8 @@
   });
 
   jQuery(function($) {
+
+
     var ListifyListingGallery;
     ListifyListingGallery = (function() {
       function ListifyListingGallery() {
