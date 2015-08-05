@@ -1,9 +1,13 @@
 (function() {
+
+
+
   var ListifySingleMap, initialize,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   ListifySingleMap = (function() {
-    function ListifySingleMap() {
+
+      function ListifySingleMap() {
       this.setMarker = __bind(this.setMarker, this);
       this.setupMap = __bind(this.setupMap, this);
       this.setOptions = __bind(this.setOptions, this);

@@ -68,25 +68,51 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 			$before_title = sprintf( $before_title, 'ion-' . $icon );
 		}
 
+
+
+
 		ob_start();
 
 		echo $before_widget;
 		?>
 
+
+
 		<div class="row">
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
 					<a href="<?php echo $listify_job_manager->template->google_maps_url(); ?>" class="listing-contact-map-clickbox"></a>
-					<?php echo $listify_job_manager->template->google_maps_url(); ?>
-					<?php echo $location; ?>
-					<?php echo $address; ?>
+                    <?php
+                    $service_url = 'https://maps.googleapis.com/maps/api/directions/json?origin=Florida&destination=RhodeIsland&key=AIzaSyBLzancw8yODD8ssXBNUJ-C0R0OsMyUvoo';
+                    $apiData = file_get_contents($service_url);
+                    $json = json_decode($apiData);
 
+                        $data = $json->routes[0];
+                        foreach($data->legs[0]->steps as $item){
+                            echo $item->html_instructions;
+                            echo $item->html_instructions;
+
+                        }
+
+
+                    ?>
 
 					<div id="listing-contact-map"></div>
 
 					<div>
-						<form>
-
+						<form onchange="getAddress();">
+                            <div>
+                                <label>Street</label>
+                                <input type="text" id="street" width="100%" placeholder="Street">
+                            </div>
+                            <div>
+                                <label>City</label>
+                                <input type="text" id="city" placeholder="City">
+                            </div>
+                            <div>
+                                <label>State</label>
+                                <input type="text" id="state" placeholder="State">
+                            </div>
 						</form>
 					</div>
 				</div>
