@@ -4,8 +4,10 @@ header('Content-type: application/json');
 $q = $_GET['q'];
 $error = $q;
 
-$service_url = 'https://maps.googleapis.com/maps/api/directions/json?origin=2351%20Nautical%20Way%20Orlando%20Florida&destination=Florida&key=AIzaSyBLzancw8yODD8ssXBNUJ-C0R0OsMyUvoo';
+$new = str_replace(' ', '%20', $q);
 
+$service_url = 'https://maps.googleapis.com/maps/api/directions/json?origin=2351%20Nautical%20Way%20Orlando%20Florida&destination='.$new.'&key=AIzaSyBLzancw8yODD8ssXBNUJ-C0R0OsMyUvoo';
+//$service_url = 'https://maps.googleapis.com/maps/api/directions/json?origin=31%20Calhoun%20ave%20warwick%20ri&destination=2351%20nautical%20way%20orlando%20florida&key=AIzaSyBLzancw8yODD8ssXBNUJ-C0R0OsMyUvoo';
 
 $apiData = file_get_contents($service_url);
 $json = json_decode($apiData);
@@ -24,7 +26,7 @@ $data = $json->routes[0];
     $dataArray = array(
         'directions'=> $directions,
         'duration'=>$duration,
-        'error'=>$error
+        'error'=>$new
     );
 
 echo json_encode($dataArray);

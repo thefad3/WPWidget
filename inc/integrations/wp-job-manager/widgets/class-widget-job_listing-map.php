@@ -75,23 +75,22 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 
 		echo $before_widget;
 		?>
-
         <script type="text/javascript">
 
-            function getDirections(){
+                function getDirections() {
 
-                var data = document.getElementById('address').elements[0].value;
-                console.log('TestBruh', ' ', data);
+                    var data = document.getElementById('address').elements[0].value;
 
-                var xhr = new XMLHttpRequest();
-                //xhr.open("POST", "#", false);
-                xhr.open("GET", "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q="+data, false);
-                xhr.send();
-
-                console.log(xhr);
-                console.log(xhr.statusText);
-
-            }
+                    //API call to PHP file.
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data, false);
+                    xhr.send();
+                    var apiData = JSON.parse(xhr.response);
+                    console.log(apiData);
+                    var directions = document.getElementById("directions");
+                    var content = document.createTextNode(apiData.directions);
+                    directions.appendChild(content);
+                }
 
 
         </script>
@@ -105,11 +104,9 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 
 					<div id="listing-contact-map"></div>
 
-                    <?php
-
-
-
-                    ?>
+                    <div id="directions">
+                        <p></p>
+                    </div>
 
 
 					<div>
