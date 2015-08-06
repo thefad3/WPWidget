@@ -584,6 +584,33 @@ class Listify_WP_Job_Manager_Template extends listify_Integration {
 
 		return $output;
 	}
+    //Because No one likes a formatted address ;)
+    public function unformattedAddress(){
+        global $post;
+        if ( true == apply_filters( 'listify_force_skip_formatted_address', false ) ) {
+            return $this->get_the_location();
+        }
+
+        $location = get_the_job_location();
+
+        $address = apply_filters( 'listify_formatted_address', array(
+            'first_name'    => '',
+            'last_name'     => '',
+            'company'       => '',
+            'address_1'     => $post->geolocation_street,
+            'address_2'     => '',
+            'street_number' => $post->geolocation_street_number,
+            'city'          => $post->geolocation_city,
+            'state'         => $post->geolocation_state_short,
+            'full_state'    => $post->geolocation_state_long,
+            'postcode'      => $post->geolocation_postcode,
+            'country'       => $post->geolocation_country_short,
+            'full_country'  => $post->geolocation_country_long
+        ), $location, $post );
+
+
+        return $location;
+    }
 
 	public function google_maps_url() {
 		global $post;

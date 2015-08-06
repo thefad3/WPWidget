@@ -84,7 +84,7 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
                         xhr.send();
 
                     var apiData = JSON.parse(xhr.response),
-                        htmlSteps = apiData.data.routes[0].legs[0].steps;
+                        htmlSteps = apiData.data.routes[0].legs[0].steps,
                         dir=[];
 
                     for(i=0; i<htmlSteps.length;i++){
@@ -101,6 +101,8 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 
 
         </script>
+
+        <?php var_dump($listify_job_manager->template->unformattedAddress()); ?>
 		<div class="row">
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">

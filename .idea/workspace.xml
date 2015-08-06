@@ -30,14 +30,24 @@
     <favorites_list name="WPWidget" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40516698">
+    <splitter split-orientation="horizontal" split-proportion="0.65789473">
       <split-first>
         <leaf>
-          <file leaf-file-name="class-widget-job_listing-directions.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="class-widget-job_listing-directions.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23529412" vertical-offset="0" max-vertical-offset="867">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+                  <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="class-widget-job_listing-map.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.20876586" vertical-offset="1587" max-vertical-offset="2941">
+                  <caret line="104" column="77" selection-start-line="104" selection-start-column="77" selection-end-line="104" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -47,12 +57,15 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="class-widget-job_listing-map.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
+          <file leaf-file-name="class-wp-job-manager-template.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/class-wp-job-manager-template.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.46251443" vertical-offset="1214" max-vertical-offset="2907">
-                  <caret line="95" column="64" selection-start-line="95" selection-start-column="64" selection-end-line="95" selection-end-column="64" />
-                  <folding />
+                <state vertical-scroll-proportion="0.22911695" vertical-offset="9770" max-vertical-offset="16830">
+                  <caret line="586" column="49" selection-start-line="586" selection-start-column="49" selection-end-line="586" selection-end-column="49" />
+                  <folding>
+                    <marker date="1438891160413" expanded="true" signature="12053:12391" placeholder="..." />
+                    <marker date="1438891160413" expanded="true" signature="12189:12382" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -72,6 +85,7 @@
         <option value="$PROJECT_DIR$/inc/integrations/wp-job-manager/js/listing/app.js" />
         <option value="$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php" />
         <option value="$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php" />
+        <option value="$PROJECT_DIR$/inc/integrations/wp-job-manager/class-wp-job-manager-template.php" />
       </list>
     </option>
   </component>
@@ -338,7 +352,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15405117" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23027718" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -556,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/class-wp-job-manager-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0630105" vertical-offset="8874" max-vertical-offset="16371">
-          <caret line="626" column="19" selection-start-line="626" selection-start-column="19" selection-end-line="626" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/js/listing/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13325869" vertical-offset="1275" max-vertical-offset="3264">
@@ -573,17 +580,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23529412" vertical-offset="0" max-vertical-offset="867">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46251443" vertical-offset="1214" max-vertical-offset="2907">
-          <caret line="95" column="64" selection-start-line="95" selection-start-column="64" selection-end-line="95" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.20876586" vertical-offset="1587" max-vertical-offset="2941">
+          <caret line="104" column="77" selection-start-line="104" selection-start-column="77" selection-end-line="104" selection-end-column="77" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/integrations/wp-job-manager/class-wp-job-manager-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22911695" vertical-offset="9770" max-vertical-offset="16830">
+          <caret line="586" column="49" selection-start-line="586" selection-start-column="49" selection-end-line="586" selection-end-column="49" />
+          <folding>
+            <marker date="1438891160413" expanded="true" signature="12053:12391" placeholder="..." />
+            <marker date="1438891160413" expanded="true" signature="12189:12382" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
