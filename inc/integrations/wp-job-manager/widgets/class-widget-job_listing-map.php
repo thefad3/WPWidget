@@ -68,7 +68,8 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 			$before_title = sprintf( $before_title, 'ion-' . $icon );
 		}
 
-
+        $unformattedLocation = $listify_job_manager->template->unformattedAddress();
+        $l = str_replace(' ', '%20', $unformattedLocation);
 
 
 		ob_start();
@@ -79,13 +80,17 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 
             function getDirections() {
                     var data = document.getElementById('address').elements[0].value,
+                        url = "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data + "&loc=<?php echo $l ?>";
+                        console.log(url);
                         xhr = new XMLHttpRequest();
-                        xhr.open("GET", "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data, false);
+                        xhr.open("GET", url , false);
                         xhr.send();
 
                     var apiData = JSON.parse(xhr.response),
                         htmlSteps = apiData.data.routes[0].legs[0].steps,
                         dir=[];
+
+                    console.log(apiData);
 
                     for(i=0; i<htmlSteps.length;i++){
                         dir.push(apiData.data.routes[0].legs[0].steps[i]);
@@ -102,7 +107,7 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 
         </script>
 
-        <?php var_dump($listify_job_manager->template->unformattedAddress()); ?>
+        <?php echo $listify_job_manager->template->unformattedAddress(); ?>
 		<div class="row">
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
