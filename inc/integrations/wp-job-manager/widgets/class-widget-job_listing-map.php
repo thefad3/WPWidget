@@ -77,26 +77,30 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 		?>
         <script type="text/javascript">
 
-                function getDirections() {
+            function getDirections() {
+                    var data = document.getElementById('address').elements[0].value,
+                        xhr = new XMLHttpRequest();
+                        xhr.open("GET", "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data, false);
+                        xhr.send();
 
-                    var data = document.getElementById('address').elements[0].value;
+                    var apiData = JSON.parse(xhr.response),
+                        htmlSteps = apiData.data.routes[0].legs[0].steps;
+                        dir=[];
 
-                    //API call to PHP file.
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("GET", "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data, false);
-                    xhr.send();
-                    var apiData = JSON.parse(xhr.response);
-                    console.log(apiData);
-                    var directions = document.getElementById("directions");
-                    var content = document.createTextNode(apiData.directions);
-                    directions.appendChild(content);
+                    for(i=0; i<htmlSteps.length;i++){
+                        dir.push(apiData.data.routes[0].legs[0].steps[i]);
+                    }
+
+                    dir.forEach(function(data){
+                        var directions = document.getElementById("directions"),
+                            content = document.createElement("div");
+                            content.innerHTML = data.html_instructions;
+                            directions.appendChild(content);
+                    });
                 }
 
 
         </script>
-
-
-
 		<div class="row">
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
@@ -104,9 +108,6 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 
 					<div id="listing-contact-map"></div>
 
-                    <div id="directions">
-                        <p></p>
-                    </div>
 
 
 					<div>
@@ -115,10 +116,12 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
                                 <label>Enter your Address:</label>
                                 <input type="text" width="100%" placeholder="Street">
                             </div>
-
 						</form>
 					</div>
-				</div>
+                    <div id="directions"></div>
+                </div>
+
+
 			<?php endif; ?>
 
 			<?php if ( $phone || $web || $address ) : ?>
