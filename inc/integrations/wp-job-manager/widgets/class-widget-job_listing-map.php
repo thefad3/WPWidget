@@ -77,54 +77,67 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 		echo $before_widget;
 		?>
         <script type="text/javascript">
-
+            var count=0;
             function getDirections() {
-                    var data = document.getElementById('address').elements[0].value,
-                        url = "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data + "&loc=<?php echo $l ?>";
-                        console.log(url);
+                if(count>0){
+                    document.getElementById("directions").innerHTML = '';
+                }
+                count++;
+                var data = document.getElementById('address').elements[0].value,
+                    url = "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data + "&loc=<?php echo $l ?>";
+                    xhr = new XMLHttpRequest();
+                    xhr.open("GET", url , false);
+                    xhr.send();
+                var apiData = JSON.parse(xhr.response),
+                    htmlSteps = apiData.data.routes[0].legs[0].steps;
+                for(i=0; i<htmlSteps.length;i++){
+                    var directions = document.getElementById("directions"),
+                        content = document.createElement("div");
+                        content.innerHTML = apiData.data.routes[0].legs[0].steps[i].html_instructions;
+                        directions.appendChild(content);
+                    }
+
+                }
+
+            function gpsDirections(){
+                navigator.geolocation.getCurrentPosition(success);
+                function success(position) {
+                    if(count>0){
+                        document.getElementById("directions").innerHTML = '';
+                    }
+                    count++;
+                    var location = position.coords.latitude+','+position.coords.longitude,
+                        url = "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + location + "&loc=<?php echo $l ?>";
                         xhr = new XMLHttpRequest();
                         xhr.open("GET", url , false);
                         xhr.send();
-
-                    var apiData = JSON.parse(xhr.response),
-                        htmlSteps = apiData.data.routes[0].legs[0].steps,
-                        dir=[];
-
-                    console.log(apiData);
-
-                    for(i=0; i<htmlSteps.length;i++){
-                        dir.push(apiData.data.routes[0].legs[0].steps[i]);
-                    }
-
-                    dir.forEach(function(data){
-                        var directions = document.getElementById("directions"),
-                            content = document.createElement("div");
-                            content.innerHTML = data.html_instructions;
+                        var apiData = JSON.parse(xhr.response),
+                            htmlSteps = apiData.data.routes[0].legs[0].steps;
+                        for(i=0; i<htmlSteps.length;i++){
+                            var directions = document.getElementById("directions"),
+                                content = document.createElement("div");
+                            content.innerHTML = apiData.data.routes[0].legs[0].steps[i].html_instructions;
                             directions.appendChild(content);
-                    });
+                        }
                 }
 
-
+            }
         </script>
-
-        <?php echo $listify_job_manager->template->unformattedAddress(); ?>
 		<div class="row">
 			<?php if ( $map && $post->geolocation_lat ) : ?>
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
 					<a href="<?php echo $listify_job_manager->template->google_maps_url(); ?>" class="listing-contact-map-clickbox"></a>
-
 					<div id="listing-contact-map"></div>
-
-
-
 					<div>
-						<form onchange="getDirections();" id="address">
+						<form action="#direc" onchange="getDirections();" id="address">
                             <div>
-                                <label>Enter your Address:</label>
-                                <input type="text" width="100%" placeholder="Street">
+                                <label>Enter your Address:</label><br>
+                                <input type="text" width="100%" placeholder="Street"><br>
+                                <button type="submit">Get Directions</button><button onClick="gpsDirections()">From My Location</button>
                             </div>
 						</form>
 					</div>
+                    <a href="#direct"></a>
                     <div id="directions"></div>
                 </div>
 
