@@ -129,11 +129,11 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 					<a href="<?php echo $listify_job_manager->template->google_maps_url(); ?>" class="listing-contact-map-clickbox"></a>
 					<div id="listing-contact-map"></div>
 					<div>
-						<form action="#direc" onchange="getDirections();" id="address">
+						<form action="#direc" id="address">
                             <div>
                                 <label>Enter your Address:</label><br>
                                 <input type="text" width="100%" placeholder="Street"><br>
-                                <button type="submit">Get Directions</button><button onClick="gpsDirections()">From My Location</button>
+                                <button type="submit" onclick="getDirections()">Get Directions</button><button onClick="gpsDirections()">From My Location</button>
                             </div>
 						</form>
 					</div>
