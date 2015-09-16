@@ -81,29 +81,39 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
             function getDirections() {
                 if(count>0){
                     document.getElementById("directions").innerHTML = '';
+                    document.getElementById("distance").innerHTML = '';
                 }
                 count++;
-                var data = document.getElementById('address').elements[0].value,
+                var data = document.getElementById('address').elements;
                     url = "/wp-content/themes/listify/inc/integrations/wp-job-manager/widgets/class-widget-job_listing-directions.php?q=" + data + "&loc=<?php echo $l ?>";
                     xhr = new XMLHttpRequest();
                     xhr.open("GET", url , false);
                     xhr.send();
                 var apiData = JSON.parse(xhr.response),
-                    htmlSteps = apiData.data.routes[0].legs[0].steps;
+                    htmlSteps = apiData.data.routes[0].legs[0].steps,
+                    distance = apiData.data.routes[0].legs[0].distance.text,
+                    totalMiles = document.getElementById("distance");
+
+                dirDiv = document.createElement("div");
+                dirDiv.innerHTML = distance;
+                totalMiles.appendChild(dirDiv);
+
+
                 for(i=0; i<htmlSteps.length;i++){
                     var directions = document.getElementById("directions"),
                         content = document.createElement("div");
-                        content.innerHTML = apiData.data.routes[0].legs[0].steps[i].html_instructions;
+                        content.innerHTML = apiData.data.routes[0].legs[0].steps[i].html_instructions + apiData.data.routes[0].legs[0].steps[i].distance.text;
                         directions.appendChild(content);
                     }
-
                 }
 
             function gpsDirections(){
+
                 navigator.geolocation.getCurrentPosition(success);
                 function success(position) {
                     if(count>0){
                         document.getElementById("directions").innerHTML = '';
+                        document.getElementById("distance").innerHTML = '';
                     }
                     count++;
                     var location = position.coords.latitude+','+position.coords.longitude,
@@ -112,15 +122,21 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
                         xhr.open("GET", url , false);
                         xhr.send();
                         var apiData = JSON.parse(xhr.response),
-                            htmlSteps = apiData.data.routes[0].legs[0].steps;
-                        for(i=0; i<htmlSteps.length;i++){
+                            htmlSteps = apiData.data.routes[0].legs[0].steps,
+                            distance = apiData.data.routes[0].legs[0].distance.text,
+                            totalMiles = document.getElementById("distance");
+
+                            dirDiv = document.createElement("div");
+                            dirDiv.innerHTML = distance;
+                            totalMiles.appendChild(dirDiv);
+
+                    for(i=0; i<htmlSteps.length;i++){
                             var directions = document.getElementById("directions"),
                                 content = document.createElement("div");
-                            content.innerHTML = apiData.data.routes[0].legs[0].steps[i].html_instructions;
+                            content.innerHTML = apiData.data.routes[0].legs[0].steps[i].html_instructions + apiData.data.routes[0].legs[0].steps[i].distance.text;
                             directions.appendChild(content);
                         }
                 }
-
             }
         </script>
 		<div class="row">
@@ -128,16 +144,12 @@ class Listify_Widget_Listing_Map extends Listify_Widget {
 				<div class="<?php if ( $phone || $web || $address ) : ?>col-md-6<?php endif; ?> col-sm-12">
 					<a href="<?php echo $listify_job_manager->template->google_maps_url(); ?>" class="listing-contact-map-clickbox"></a>
 					<div id="listing-contact-map"></div>
-					<div>
-						<form action="#direc" id="address">
-                            <div>
-                                <label>Enter your Address:</label><br>
-                                <input type="text" width="100%" placeholder="Street"><br>
-                                <button type="submit" onclick="getDirections()">Get Directions</button><button onClick="gpsDirections()">From My Location</button>
-                            </div>
-						</form>
-					</div>
-                    <a href="#direct"></a>
+                        <div id="address">
+                                <input type="text" placeholder="Address">
+                                <button type="button" onClick="gpsDirections()">From My Location</button>
+                                <button type="button" onClick="getDirections()">Get Directions</button>
+                        </div>
+                    <div id="distance"></div>
                     <div id="directions"></div>
                 </div>
 
