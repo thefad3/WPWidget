@@ -1,0 +1,122 @@
+# Copyright (C) 2015 WP Job Manager - Reviews
+# This file is distributed under the same license as the WP Job Manager - Reviews package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Job Manager - Reviews 1.2.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-job-manager-reviews\n"
+"POT-Creation-Date: 2015-03-19 19:16:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-wpjmr-review.php:471
+msgid "Looks like you&#8217;ve already posted a review!"
+msgstr ""
+
+#: includes/class-wpjmr-review.php:483
+msgid "<strong>ERROR:</strong> Please select a rating for all categories."
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:154
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:161
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:301
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:301
+msgid "Error"
+msgstr ""
+
+#: includes/updater/class-astoundify-updater.php:42
+msgid "License Key"
+msgstr ""
+
+#: includes/updater/class-astoundify-updater.php:43
+msgid "Enter the license key you received with your purchase receipt."
+msgstr ""
+
+#: includes/updater/class-astoundify-updater.php:78
+msgid "Deactivate"
+msgstr ""
+
+#: wp-job-manager-reviews.php:163
+msgid "Speed"
+msgstr ""
+
+#: wp-job-manager-reviews.php:164
+msgid "Quality"
+msgstr ""
+
+#: wp-job-manager-reviews.php:165
+msgid "Price"
+msgstr ""
+
+#: wp-job-manager-reviews.php:232
+msgid "Reviews"
+msgstr ""
+
+#: wp-job-manager-reviews.php:238
+msgid "Stars"
+msgstr ""
+
+#: wp-job-manager-reviews.php:239
+msgid "How many stars would you like to use?"
+msgstr ""
+
+#: wp-job-manager-reviews.php:246
+msgid "Review Categories"
+msgstr ""
+
+#: wp-job-manager-reviews.php:247
+msgid "Categories you would you like to use, each category on one line."
+msgstr ""
+
+#: wp-job-manager-reviews.php:255
+msgid "Restrict Reviews"
+msgstr ""
+
+#: wp-job-manager-reviews.php:256
+msgid "Restrict reviews"
+msgstr ""
+
+#: wp-job-manager-reviews.php:257
+msgid ""
+"Restrict giving a review to users that are validated buyers of associated "
+"products."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Job Manager - Reviews"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://astoundify.com/downloads/wp-job-manager-reviews/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Leave reviews for listings in WP Job Manager. Define review categories and "
+"choose the number of stars available."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Astoundify"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://astoundify.com"
+msgstr ""

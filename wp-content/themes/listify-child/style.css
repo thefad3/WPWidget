@@ -1,0 +1,163 @@
+/*
+Theme Name: Listify - Child Theme 
+Theme URI: http://astoundify.com/themes/listify
+Author: Astoundify
+Author URI: http://astoundify.com
+Description: Your beautiful handcrafted directory.
+Version: 1.0.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: listify-foursquare
+Domain Path: /languages/
+Tags: white, two-columns, one-column, right-sidebar, left-sidebar, responsive-layout, custom-background, custom-header, theme-options, full-width-template, featured-images, flexible-header, custom-menu, translation-ready
+Template: listify
+*/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Architects Daughter' !important;
+	font-weight: bold;
+	letter-spacing: .1rem;
+}
+
+.job_listing-title h1, h1.page-title{
+	
+	text-transform: uppercase;
+}
+
+@media (min-width: 991px){
+	.review-form-stars{
+		width: 35%;
+		float: left;		
+	}
+	.comment-form-comment{
+		width: 65%;
+		float: right;
+	}
+	#wpjmr-submit-ratings label{
+		min-width: 100px;
+	}
+	
+}
+
+/* Responsive Menu Customization */
+@media (max-width: 991px){
+.navigation-bar-wrapper {
+  left: 0px;
+  right: 0px;
+  border-radius: 0;
+  box-shadow: rgba(0,0,0,.4) 0 20px 20px 10px;
+}
+
+.navigation-bar-wrapper:before, .navigation-bar-wrapper:after{
+  border-style: none;
+}}
+
+/* Home Page Image Grid Font Customization */
+
+.home a.cover-wrapper{
+font-family: 'architects daughter';
+font-weight: bold;
+letter-spacing: .2rem;
+font-size: 34px;
+text-transform: uppercase;
+text-shadow: rgba(0,0,0,.6) 0 3px 4px;
+line-height: 1em;
+}
+
+.listify_widget_search_listings .home-widget-section-title h1, .listify_widget_search_listings .home-widget-section-title h2{
+text-shadow: rgba(0,0,0,.6) 0 3px 4px;
+}
+
+@media (min-width: 992px){
+.home-widget {
+  margin: 6.5em 0 9em 0;
+}}
+
+h2.home-widget-title{
+font-size: 40px;
+}
+
+/* CTA */
+.call-to-action {
+	background-color: #f0f3f6;
+	border-bottom: 10px solid white;
+	border-top: 6px solid #717a8f;
+}
+ 
+/* FEATURE BREAK OUTS  */
+.feature-learn-more{
+text-align: center; 
+border: 2px solid #3396d1; 
+padding: 6px;
+border-radius: 4px;
+}
+.feature-learn-more a:hover{
+color: rgba(209, 51, 51, 1);
+}
+
+.feature-learn-more:hover{
+border: 2px solid rgba(209, 51, 51, 1);
+color: rgba(209, 51, 51, 1);
+}
+
+.job_position_featured .content-box{
+box-shadow: 0 0 0 red;
+}
+
+h2.home-widget-description{
+font-size: 18px;
+}
+
+.job_listing-title {
+  font-size: 30px;
+  text-transform: uppercase;
+text-shadow: 1px 1px 10px rgba(0,0,0,1);
+
+}
+
+/* Display Your Website's Tagline */
+.site-branding .site-tagline {
+  clip: auto;
+  position: relative;
+  font-size: 13px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Hide Inactive Amenity Tags */
+.listify_widget_panel_listing_tags span.inactive {
+	display: none;
+}
+
+/* Remove Author Info Icon */
+.job_listing-author-info-more a:last-child {
+  display: none !important;
+}
+
+/* Remove the "Showing X, RSS, and Reset" Bar */
+
+body .showing_jobs {
+    display: none !important;
+}
+
+/* Remove Tag Search from listing pages */
+.filter_wide, .filter_by_tag{
+	display: none !important;
+}
+
+/* Footer Area */
+.footer-widget-title{
+	font-size: 26px !important;
+	font-weight: 400;
+}
+
+:not(.wp-core-ui) button, 
+body, 
+input, 
+select, 
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}

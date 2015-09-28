@@ -1,0 +1,1124 @@
+# Copyright (C) 2015 Myles McNamara
+# This file is distributed under the same license as the WP Job Manager - Visibility package.
+# Translators:
+# Myles McNamara <myles@smyl.es>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Job Manager Visibility\n"
+"Report-Msgid-Bugs-To: http://plugins.smyl.es\n"
+"POT-Creation-Date: 2015-06-17 00:11:58+00:00\n"
+"PO-Revision-Date: 2015-06-16 21:14+0000\n"
+"Last-Translator: Myles McNamara <myles@smyl.es>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/wp-job-manager-visibility/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
+
+#: classes/admin/ajax/custom.php:15 classes/admin/ajax/default.php:15
+msgid "Unable to determine post ID!"
+msgstr "Stand til at bestemme stillingen ID!"
+
+#: classes/admin/ajax/custom.php:21 classes/admin/ajax/default.php:21
+msgid "A meta key (field) is required!"
+msgstr "En meta tast (feltet) er påkrævet!"
+
+#: classes/admin/ajax/custom.php:50 classes/admin/ajax/default.php:51
+msgid "Error updating default configuration placeholder post meta!"
+msgstr "Fejl opdatering standard konfigurations placeholder post meta!"
+
+#: classes/admin/ajax/custom.php:52 classes/admin/ajax/default.php:53
+msgid "Default configuration updated successfully!"
+msgstr "Standardkonfiguration succesfuldt opdateret!"
+
+#: classes/admin/ajax/custom.php:65 classes/admin/ajax/default.php:66
+msgid "Error removing configuration!"
+msgstr "Fejl fjernelse konfiguration!"
+
+#: classes/admin/ajax/custom.php:66 classes/admin/ajax/default.php:67
+msgid "Default configuration removed successfully!"
+msgstr "Standardkonfigurationen fjernet med succes!"
+
+#: classes/admin/ajax.php:209
+msgid "Unable to get the POST variable"
+msgstr "Der kan ikke hentes POST variabel"
+
+#: classes/admin/assets.php:23
+msgid ""
+"If you continue receive this error, please submit a <a target=\"_blank\" "
+"href=\"%s\">support ticket</a>."
+msgstr "Hvis du fortsat modtager denne fejl, skal du indsende en <a target=\"_blank\" href=\"%s\"> support ticket</a>."
+
+#: classes/admin/assets.php:24
+msgid "This field is required!"
+msgstr "Dette felt er påkrævet!"
+
+#: classes/admin/assets.php:25
+msgid "Yes"
+msgstr "Ja"
+
+#: classes/admin/assets.php:26
+msgid "Loading"
+msgstr "Lastning"
+
+#: classes/admin/assets.php:27
+msgid "No"
+msgstr "Nej"
+
+#: classes/admin/assets.php:28 classes/admin/views/metabox.php:68
+#: classes/admin/views/placeholders.php:49
+msgid "Cancel"
+msgstr "Annuller"
+
+#: classes/admin/assets.php:29
+msgid "Close"
+msgstr "Luk"
+
+#: classes/admin/assets.php:30 classes/admin/settings.php:101
+#: classes/admin/settings.php:115 classes/admin/settings.php:244
+#: classes/admin/settings.php:271 classes/output/rm.php:139
+msgid "Enable"
+msgstr "Aktiverer"
+
+#: classes/admin/assets.php:31 classes/admin/settings.php:235
+#: classes/admin/settings.php:253 classes/admin/settings.php:262
+#: classes/admin/settings.php:280
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: classes/admin/assets.php:32
+msgid "Error"
+msgstr "Fejl"
+
+#: classes/admin/assets.php:33
+msgid "Uknown Error! Refresh the page and try again."
+msgstr "Servertilstand fejl! Opdatere siden og prøv igen."
+
+#: classes/admin/assets.php:34
+msgid "Success"
+msgstr "Succes"
+
+#: classes/admin/assets.php:35
+msgid "Are you sure you want to remove this configuration?"
+msgstr "Vil du fjerne denne konfiguration?"
+
+#: classes/admin/assets.php:36
+msgid "You can't add a meta key to hide if it's set as a visible field!"
+msgstr "Du kan ikke tilføje en meta nøgle til at skjule, hvis det er angivet som et synligt felt!"
+
+#: classes/admin/help/default.php:23 classes/admin/listtable/default.php:22
+msgid "Visible Fields"
+msgstr "Synlige felter"
+
+#: classes/admin/help/default.php:26 classes/admin/listtable/default.php:21
+msgid "Hidden Fields"
+msgstr "Skjulte felter"
+
+#: classes/admin/help/default.php:40
+msgid ""
+"<p><strong><em>Any fields you set as visible will override other hidden "
+"field settings as long as one of these two requirements are "
+"met:</p></strong></em><p><strong>1.)</strong> This configuration is for a "
+"specific user (specific user config always has higher priority than "
+"groups)</p><p><strong>OR</strong></p><p><strong>2.)</strong> This "
+"configuration is for a group, and this group has a higher priority than any "
+"group that hides this field.</p>"
+msgstr "<p><strong><em>Alle de felter du angivet som synlige vil tilsidesætte andre skjulte Feltindstillinger, så længe en af disse to krav er opfyldt:</p></strong></em> <p><strong>1.)</strong> denne konfiguration er for en bestemt bruger (specifik bruger config har altid højere prioritet end grupper)</p> <p><strong>eller</strong></p> <p><strong>2.)</strong> Denne konfiguration er en gruppe, og denne gruppe har en højere prioritet end nogen gruppe, der skjuler dette felt.</p>"
+
+#: classes/admin/help/default.php:46
+msgid ""
+"<p><strong><em>These fields will be hidden (and placeholder used if set) as "
+"long as one of these two requirements are "
+"met:</em></strong></p><p><strong>1.)</strong> This configuration is for a "
+"specific user (specific user config always has higher priority than "
+"groups)</p><p><strong>OR</strong></p><p><strong>2.)</strong> This "
+"configuration is for a group, and there are no other configurations to show "
+"this field, or if there are, this group has a higher priority than any "
+"groups that show this field.</p>"
+msgstr "<p><strong><em>Disse felter vil være skjult (og pladsholder bruges hvis angivet) så længe en af disse to krav er opfyldt:</em></strong></p> <p><strong>1.)</strong> denne konfiguration er for en bestemt bruger (specifik bruger config har altid højere prioritet end grupper)</p> <p><strong>eller</strong></p> <p><strong>2.)</strong> Denne konfiguration er en gruppe, og der er ingen andre konfigurationer til at vise dette felt, eller hvis der er, denne gruppe har en højere prioritet end de grupper, der viser dette felt.</p>"
+
+#: classes/admin/help/groups.php:23
+msgid "Overview"
+msgstr "Oversigt"
+
+#: classes/admin/help/groups.php:26 classes/admin/listtable/default.php:20
+#: classes/admin/listtable/groups.php:19
+msgid "Priority"
+msgstr "Prioritet"
+
+#: classes/admin/help/groups.php:29 classes/admin/listtable/groups.php:20
+#: classes/admin/metaboxes/groups.php:28 classes/admin/views/metabox.php:39
+#: classes/admin/views/users.php:46
+msgid "Users"
+msgstr "Brugere"
+
+#: classes/admin/help/groups.php:32 classes/admin/listtable/groups.php:21
+#: classes/admin/metaboxes/groups.php:37 classes/admin/settings.php:192
+#: classes/admin/views/metabox.php:30 classes/admin/views/users.php:32
+#: classes/cpt.php:268
+msgid "Groups"
+msgstr "Grupper"
+
+#: classes/admin/help/groups.php:35 classes/admin/listtable/groups.php:22
+#: classes/admin/metaboxes/groups.php:46 classes/admin/views/roles.php:28
+msgid "Roles"
+msgstr "Roller"
+
+#: classes/admin/help/groups.php:50
+msgid ""
+"Groups can be used to create many different setups based on your specific "
+"needs. Groups will always have a lower priority than user specific "
+"configurations, so a group will never override a specific user "
+"configuration."
+msgstr "Grupper kan bruges til at oprette mange forskellige opsætninger baseret på dine specifikke behov. Grupper vil altid have en lavere prioritet end bruger specifikke konfigurationer, så en gruppe vil aldrig tilsidesætte en bestemt Brugerkonfiguration."
+
+#: classes/admin/help/groups.php:53
+msgid ""
+"You can include multiple users, other groups, roles, or even any other addon"
+" configurations (such as packages, etc)."
+msgstr "Du kan medtage flere brugere, andre grupper, roller eller nogen andre addon konfigurationer (såsom pakker, etc)."
+
+#: classes/admin/help/groups.php:61
+msgid ""
+"Default priority is 10 (if not set).  The lower the number the higher the "
+"priority ( 1 is a higher priority than 5 )"
+msgstr "Standardprioritet, der er 10 (hvis ikke angivet).  Jo lavere tallet jo højere prioritet (1 er en højere prioritet end 5)"
+
+#: classes/admin/help/groups.php:64
+msgid ""
+"Priorities are specifically used for groups to determine what group should "
+"take priority whenever there is a coflict."
+msgstr "Prioriteter bruges specifikt for grupper til at bestemme, hvilken gruppe bør prioriteres, når der er en coflict."
+
+#: classes/admin/help/groups.php:67
+msgid ""
+"As an example, you have 2 different groups ( Employers [Priority 5], and "
+"Gold Package [Priority 1] ):"
+msgstr "Som et eksempel har du 2 forskellige grupper (arbejdsgivere [prioritet 5] og guld pakke [prioritet 1]):"
+
+#: classes/admin/help/groups.php:70
+msgid "Employer Group (Priority 5) has these fields set to hide:"
+msgstr "Arbejdsgiveren gruppe (prioritet 5) er disse felter angivet til at skjule:"
+
+#: classes/admin/help/groups.php:73
+msgid "Gold Package (Priority 1) has these fields set to show:"
+msgstr "Guld pakke (prioritet 1) er disse felter angivet til at vise:"
+
+#: classes/admin/help/groups.php:76
+msgid ""
+"When someone visits your site and is a member of both of those groups, "
+"because Gold Package has a higher priority than Employer Group, the final "
+"result would be:"
+msgstr "Når en person besøger dit websted og er medlem af begge disse grupper, fordi guld pakke har en højere prioritet end arbejdsgiver gruppe, ville det endelige resultat være:"
+
+#: classes/admin/help/groups.php:79
+msgid "Show Fields:"
+msgstr "Vis felter:"
+
+#: classes/admin/help/groups.php:82
+msgid "Hide Fields:"
+msgstr "Skjul felter:"
+
+#: classes/admin/help/groups.php:90
+msgid ""
+"Include as many users as you want into a group.  Even if users are included "
+"in this group, if you have any user specific configurations they will take "
+"priority over this group configuration."
+msgstr "Omfatte så mange brugere som du ønsker i en gruppe.  Selvom brugere er medtaget i denne gruppe, hvis du har nogen bruger specifikke konfigurationer vil de tage prioritet over denne gruppe konfiguration."
+
+#: classes/admin/help/groups.php:101 classes/admin/help/settings.php:32
+msgid "Coming Soon..."
+msgstr "Kommer snart..."
+
+#: classes/admin/help/groups.php:109
+msgid ""
+"You can include any registered roles into a group.  A special group has also"
+" been added called Anonymous which is used for any users that are not logged"
+" in."
+msgstr "Du kan medtage alle registrerede roller i en gruppe.  En særlig gruppe er også blevet tilføjet kaldet anonym, som anvendes til alle brugere, der ikke er logget på."
+
+#: classes/admin/help/settings.php:24 classes/admin/settings.php:229
+msgid "Debug"
+msgstr "Debug"
+
+#: classes/admin/listtable/custom.php:16
+msgid "Fields"
+msgstr "Felter"
+
+#: classes/admin/listtable/custom.php:17
+msgid "Total Fields"
+msgstr "Totalfelter"
+
+#: classes/admin/listtable/custom.php:18
+#: classes/admin/listtable/default.php:24
+#: classes/admin/listtable/groups.php:24
+msgid "Actions"
+msgstr "Handlinger"
+
+#: classes/admin/listtable/custom.php:53
+#: classes/admin/listtable/default.php:93
+#: classes/admin/listtable/groups.php:123
+msgid "Edit"
+msgstr "Rediger"
+
+#: classes/admin/listtable/custom.php:54
+#: classes/admin/listtable/default.php:94
+#: classes/admin/listtable/groups.php:124
+msgid "Delete"
+msgstr "Slet"
+
+#: classes/admin/listtable/default.php:18
+#: classes/admin/listtable/groups.php:18
+msgid "Title"
+msgstr "Titel"
+
+#: classes/admin/listtable/default.php:23
+#: classes/admin/listtable/groups.php:23
+msgid "Last Updated"
+msgstr "Sidst opdateret"
+
+#: classes/admin/listtable/default.php:51
+msgid "n/a"
+msgstr "Nielsen"
+
+#: classes/admin/listtable/default.php:60
+msgid "Group Configuration"
+msgstr "Gruppen konfiguration"
+
+#: classes/admin/listtable/default.php:64
+msgid "User Configuration"
+msgstr "Brugerkonfiguration"
+
+#: classes/admin/listtable/groups.php:64
+msgid "Are you sure you want to remove the <strong>%s</strong> group?"
+msgstr "Vil du fjerne <strong>%s</strong> gruppe?"
+
+#: classes/admin/listtable/groups.php:65
+msgid "This will remove any configurations you have created for this group!"
+msgstr "Dette vil fjerne alle konfigurationer, du har oprettet for denne gruppe!"
+
+#: classes/admin/listtable/groups.php:68
+msgid ""
+"There were configurations also found with this group in them, and if you "
+"remove this group it will be removed from those group configurations."
+msgstr "Der vil var konfigurationer også fundet med denne gruppe i dem, og hvis du fjerner denne gruppe det blive fjernet fra disse gruppe konfigurationer."
+
+#: classes/admin/listtable/groups.php:73
+msgid "Yes, remove the group!"
+msgstr "Ja, fjerne gruppen!"
+
+#: classes/admin/listtable/groups.php:75
+msgid "Remove Group?"
+msgstr "Fjern gruppe?"
+
+#: classes/admin/metaboxes/custom.php:22 classes/admin/metaboxes/custom.php:31
+#: classes/cpt.php:314
+msgid "Custom Visibilities"
+msgstr "Brugerdefinerede synligheder"
+
+#: classes/admin/metaboxes/default.php:22
+msgid "Default Visible Fields"
+msgstr "Standard synlige felter"
+
+#: classes/admin/metaboxes/default.php:31
+msgid "Default Hidden Fields"
+msgstr "Standard skjulte felter"
+
+#: classes/admin/metaboxes/default.php:56
+msgid "Select a Field to Show"
+msgstr "Vælg et felt for at vise"
+
+#: classes/admin/metaboxes/groups.php:55
+msgid "Group Priority"
+msgstr "Gruppen prioriterede"
+
+#: classes/admin/metaboxes/groups.php:89 classes/admin/views/roles.php:12
+msgid "Select a Role"
+msgstr "Vælg en rolle"
+
+#: classes/admin/metaboxes/groups.php:115
+msgid "Select a User"
+msgstr "Vælg en bruger"
+
+#: classes/admin/metaboxes/groups.php:140
+msgid "Select a Group"
+msgstr "Vælg en gruppe"
+
+#: classes/admin/metaboxes.php:40
+msgid "Debug Information"
+msgstr "Debug Information"
+
+#: classes/admin/settings/handlers.php:30
+msgid "All cache has been purged/removed!"
+msgstr "Alle cachen er blevet udrenset/fjernet!"
+
+#: classes/admin/settings/handlers.php:36
+msgid "All user config cache has been purged/removed!"
+msgstr "Alle brugeren config cache er blevet udrenset/fjernet!"
+
+#: classes/admin/settings/handlers.php:42
+msgid "The core WordPress cache has been flushed!"
+msgstr ""
+
+#: classes/admin/settings/handlers.php:48
+msgid "All user group config cache has been purged/removed!"
+msgstr "Alle bruger gruppe konfigurationscache er blevet udrenset/fjernet!"
+
+#: classes/admin/settings.php:35 classes/cpt.php:243
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: classes/admin/settings.php:95
+msgid "Integration"
+msgstr "Integration"
+
+#: classes/admin/settings.php:100
+msgid "Listings"
+msgstr "Programoversigter"
+
+#: classes/admin/settings.php:102
+msgid "Enable processing of visibility configurations for %s Listings"
+msgstr "Aktivere behandling af synlighed konfigurationer for %s programoversigter"
+
+#: classes/admin/settings.php:109 classes/admin/settings.php:114
+msgid "Cache"
+msgstr "Cache"
+
+#: classes/admin/settings.php:116
+msgid ""
+"This plugin uses WordPress transients to cache user/group configs which is "
+"automatically clear anytime a config update is made.  This should be enabled"
+" unless you are having issues as this will result in around a 200-400% speed"
+" improvement."
+msgstr "Dette plugin bruger WordPress transienter til cache brugergruppe/configs, som automatisk klar når som helst en config opdatering er lavet.  Dette bør være aktiveret, medmindre du har problemer, da dette vil resultere i omkring en 200-400% hastighed forbedring."
+
+#: classes/admin/settings.php:123
+msgid "Expiration"
+msgstr "Udløb"
+
+#: classes/admin/settings.php:124
+msgid ""
+"This will be the amount of time the cache is stored before it is "
+"automatically removed. Anytime a single listing page is loaded it will "
+"regenerate the cache if it does not exist (and is enabled above)."
+msgstr "Dette vil være mængden tid cachen gemt, før det fjernes automatisk. Når som helst en enkelt liste side indlæses vil det regenerere cachen, hvis det eksisterer ikke (og aktiveres ovenfor)."
+
+#: classes/admin/settings.php:128
+msgid "1 Minute"
+msgstr "1 minut"
+
+#: classes/admin/settings.php:129
+msgid "5 Minutes"
+msgstr "5 minutter"
+
+#: classes/admin/settings.php:130
+msgid "15 Minutes"
+msgstr "15 minutter"
+
+#: classes/admin/settings.php:131
+msgid "30 Minutes"
+msgstr "30 minutter"
+
+#: classes/admin/settings.php:132
+msgid "1 Hour"
+msgstr "1 time"
+
+#: classes/admin/settings.php:133
+msgid "12 Hours"
+msgstr "12 timer"
+
+#: classes/admin/settings.php:134
+msgid "24 Hours"
+msgstr "24 timer"
+
+#: classes/admin/settings.php:135
+msgid "1 Week"
+msgstr "1 uge"
+
+#: classes/admin/settings.php:136
+msgid "2 Weeks"
+msgstr "2 uger"
+
+#: classes/admin/settings.php:137
+msgid "1 Month"
+msgstr "1 måned"
+
+#: classes/admin/settings.php:138
+msgid "3 Months"
+msgstr "3 måneder"
+
+#: classes/admin/settings.php:139
+msgid "6 Months"
+msgstr "6 måneder"
+
+#: classes/admin/settings.php:140
+msgid "1 Year"
+msgstr "1 år"
+
+#: classes/admin/settings.php:145
+msgid "Purge All"
+msgstr "Rense alle"
+
+#: classes/admin/settings.php:148
+msgid "Purge"
+msgstr "Udrensning"
+
+#: classes/admin/settings.php:149
+msgid ""
+"This will purge all user and group cache and require the cache to be rebuilt"
+" when the user visits the single listing page again."
+msgstr "Dette vil rense alle bruger- og gruppeoplysninger cache og kræver cache til at blive genopbygget, når brugeren besøger siden enkelt fortegnelse igen."
+
+#: classes/admin/settings.php:155
+msgid "Purge User Cache"
+msgstr "Rense bruger Cache"
+
+#: classes/admin/settings.php:158
+msgid "Purge User"
+msgstr "Rense bruger"
+
+#: classes/admin/settings.php:159
+msgid ""
+"Purge only the user configuration cache (only user specific config, does not"
+" clear user groups cache), cache will be rebuilt when the user visits the "
+"single listing page again."
+msgstr "Rense kun den bruger konfiguration cache (kun bruger specifikke config, ikke sletter bruger grupper cache), cache vil blive genopbygget, når brugeren besøger siden enkelt fortegnelse igen."
+
+#: classes/admin/settings.php:165
+msgid "Purge Groups Cache"
+msgstr "Rense grupper Cache"
+
+#: classes/admin/settings.php:168
+msgid "Purge Groups"
+msgstr "Fjern grupper"
+
+#: classes/admin/settings.php:169
+msgid ""
+"Purge only the groups configuration cache (only user group config), cache "
+"will be rebuilt when the user visits the single listing page again."
+msgstr "Rense kun grupper konfiguration cache (kun bruger gruppe config), cache vil blive genopbygget, når brugeren besøger siden enkelt fortegnelse igen."
+
+#: classes/admin/settings.php:175
+msgid "WP Cache"
+msgstr ""
+
+#: classes/admin/settings.php:178
+msgid "Flush Cache"
+msgstr ""
+
+#: classes/admin/settings.php:179
+msgid ""
+"This will flush the entire WordPress core cache.  This is useful when "
+"taxonomies, meta, or other core WordPress data is showing old data."
+msgstr ""
+
+#: classes/admin/settings.php:185
+msgid "Backup"
+msgstr "Backup"
+
+#: classes/admin/settings.php:189
+msgid "Download Groups Backup"
+msgstr "Download grupper Backup"
+
+#: classes/admin/settings.php:193
+msgid "Generate and download a backup of created groups."
+msgstr "Generere og downloade en sikkerhedskopi af grupper er oprettet."
+
+#: classes/admin/settings.php:199
+msgid "Download Defaults Backup"
+msgstr "Download standard Backup"
+
+#: classes/admin/settings.php:202
+msgid "Default"
+msgstr "Standard"
+
+#: classes/admin/settings.php:203
+msgid "Generate and download a backup of default visibility configurations."
+msgstr "Generere og downloade en sikkerhedskopi af standard synlighed konfigurationer."
+
+#: classes/admin/settings.php:209
+msgid "Download Custom Visibilities Backup"
+msgstr "Download brugerdefinerede synligheder Backup"
+
+#: classes/admin/settings.php:212
+msgid "Custom"
+msgstr "Custom"
+
+#: classes/admin/settings.php:213
+msgid "Generate and download a backup of custom visibility configurations."
+msgstr "Generere og downloade en sikkerhedskopi af brugerdefinerede synlighed konfigurationer."
+
+#: classes/admin/settings.php:219
+msgid "Import Backup!"
+msgstr "Importere Backup!"
+
+#: classes/admin/settings.php:222
+msgid "Import Backup"
+msgstr "Import Backup"
+
+#: classes/admin/settings.php:223
+msgid ""
+"Import a previously generated backup.  This uses the default WordPress "
+"import feature, if you do not see a file upload after clicking this button, "
+"make sure to import using WordPress importer."
+msgstr "Importere en tidligere oprettede sikkerhedskopi.  Dette bruger standard WordPress import funktion, hvis du ikke kan se en fil upload efter at klikke på denne knap, Sørg for at importere ved hjælp af WordPress importør."
+
+#: classes/admin/settings.php:234
+msgid "Disable License Deactivation"
+msgstr "Deaktivere licens deaktivering"
+
+#: classes/admin/settings.php:236
+msgid ""
+"By default when you deactivate the plugin it will also deactivate your "
+"license on the current site.  Check this box to disable the deactivation of "
+"your license when you deactivate the plugin."
+msgstr "Som standard når du deaktivere plugin vil det også deaktivere din licens på det aktuelle websted.  Marker dette afkrydsningsfelt for at deaktivere deaktivering af din licens, når du deaktiverer plugin."
+
+#: classes/admin/settings.php:243
+msgid "Enable Post Debug"
+msgstr "Indlæg af fejlfinding"
+
+#: classes/admin/settings.php:245
+msgid ""
+"Add a debug metabox to bottom of each add/edit post page (default, custom, "
+"groups)."
+msgstr "Tilføje en debug metabox til bunden af hver Tilføj/redigér post side (standard, tilpasset, grupper)."
+
+#: classes/admin/settings.php:252
+msgid "Heartbeat"
+msgstr "Hjerteslag"
+
+#: classes/admin/settings.php:254
+msgid ""
+"Disables WordPress heartbeat on Job, Resume, and any other pages for this "
+"plugin (does not affect other post types)"
+msgstr "Deaktiverer WordPress hjerteslag på Job, CV og andre sider for dette plugin (ikke påvirker andre indlæg typer)"
+
+#: classes/admin/settings.php:261
+msgid "Post Lock"
+msgstr "Post lås"
+
+#: classes/admin/settings.php:263
+msgid ""
+"Disables WordPress Post Lock on Job, Resume, and any other pages for this "
+"plugin (does not affect other post types)"
+msgstr "Deaktiverer WordPress Post lås på Job, CV og andre sider for dette plugin (ikke påvirker andre indlæg typer)"
+
+#: classes/admin/settings.php:270
+msgid "Show Debug in Footer"
+msgstr ""
+
+#: classes/admin/settings.php:272
+msgid ""
+"<strong>ONLY</strong> enable this when you are debugging, otherwise any "
+"visitor will see ALL of your user and group config!  You can also add "
+"<em>?admin_debug</em> to the end of the URL to show debug details (will only"
+" work for admins)."
+msgstr ""
+
+#: classes/admin/settings.php:279
+msgid "Admin Exception"
+msgstr "Admin undtagelse"
+
+#: classes/admin/settings.php:281
+msgid ""
+"By default if the user is an Administrator any field visibility "
+"configuration will bypassed.  Disable Admin Exception to process "
+"configurations for admins."
+msgstr "Som standard, hvis brugeren er Administrator feltet nogen synlighed konfiguration vil omgås.  Deaktiver Admin undtagelse til processen konfigurationer for admins."
+
+#: classes/admin/settings.php:288
+msgid "Support"
+msgstr "Support"
+
+#: classes/admin/settings.php:298
+msgid "About"
+msgstr "Om"
+
+#: classes/admin/settings.php:313
+msgid "Company Website"
+msgstr "Firma hjemmeside"
+
+#: classes/admin/settings.php:314
+msgid "Remove"
+msgstr "Fjern"
+
+#: classes/admin/settings.php:315
+msgid ""
+"By default when setting the company_website to hide, the placeholder will be"
+" used instead of the website URL.  Enable this option to completely remove "
+"the company website link from the single listing page."
+msgstr "Som standard ved fastsættelsen af company_website at skjule vil pladsholderen blive brugt i stedet for website URL.  Aktiver denne valgmulighed hen til helt ophæve selskab hjemmeside link fra siden enkelt fortegnelse."
+
+#: classes/admin/views/metabox.php:3
+msgid "Select Fields to Mask"
+msgstr "Vælg felter, der maske"
+
+#: classes/admin/views/metabox.php:4 classes/admin/views/users.php:13
+msgid "Select a User or Group"
+msgstr "Vælg en bruger eller gruppe"
+
+#: classes/admin/views/metabox.php:5
+msgid "Select Visibility Fields"
+msgstr "Vælg felter, synlighed"
+
+#: classes/admin/views/metabox.php:17 classes/admin/views/placeholders.php:10
+msgid "Loading..."
+msgstr "Indlæser..."
+
+#: classes/admin/views/metabox.php:53
+msgid "Select Fields to Hide on Listing"
+msgstr "Vælg felter, der skal skjule på notering"
+
+#: classes/admin/views/metabox.php:56
+msgid "Select Fields to Show on Listing"
+msgstr "Vælg felter til showet i fortegnelse"
+
+#: classes/admin/views/metabox.php:62 classes/admin/views/placeholders.php:43
+msgid "Placeholder text or HTML to use instead of actual value"
+msgstr "Pladsholdertekst eller HTML for at bruge i stedet for faktiske værdi"
+
+#: classes/admin/views/metabox.php:65 classes/admin/views/placeholders.php:46
+msgid "Add"
+msgstr "Tilføje"
+
+#: classes/admin/views/metakeys.php:13 classes/admin/views/select.php:13
+msgid "Select a %s"
+msgstr "Vælg en %s"
+
+#: classes/admin/views/metakeys.php:21 classes/admin/views/select.php:21
+msgid "No %ss Found"
+msgstr "Ingen %ss fundet"
+
+#: classes/admin/views/ph-table.php:8 classes/admin/views/table.php:8
+msgid "Edit in Progress..."
+msgstr "Rediger i gang..."
+
+#: classes/admin/views/ph-table.php:14
+msgid "Field"
+msgstr "Felt"
+
+#: classes/admin/views/ph-table.php:15 classes/admin/views/table.php:16
+msgid "Placeholder"
+msgstr "Pladsholder"
+
+#: classes/admin/views/ph-table.php:16 classes/admin/views/table.php:17
+msgid "Action"
+msgstr "Handling"
+
+#: classes/admin/views/ph-table.php:53 classes/admin/views/table.php:74
+msgid "No Records"
+msgstr "Ingen poster"
+
+#: classes/admin/views/placeholders.php:24
+msgid "Select a field to hide"
+msgstr "Vælg et felt for at skjule"
+
+#: classes/admin/views/priority.php:10
+msgid "Priority: "
+msgstr "Prioritet: "
+
+#: classes/admin/views/priority.php:17
+msgid "Default priority is 10"
+msgstr "Standardprioritet, der er 10"
+
+#: classes/admin/views/priority.php:18
+msgid "Lower number equals higher priority"
+msgstr "Lavere nummer er lig med højere prioritet"
+
+#: classes/admin/views/priority.php:19
+msgid "See the help menu in top right corner for more details on priorities."
+msgstr "Se hjælp-menuen i øverste højre hjørne for at få flere oplysninger om prioriteringer."
+
+#: classes/admin/views/roles.php:19
+msgid "No Roles Found"
+msgstr "Ingen roller fundet"
+
+#: classes/admin/views/table.php:14
+msgid "User or Group"
+msgstr "Bruger eller gruppe"
+
+#: classes/admin/views/table.php:15
+msgid "Show/Hide Fields"
+msgstr "Skjul felter"
+
+#: classes/admin/views/users.php:21
+msgid "No Groups Found"
+msgstr "Ingen grupper fundet"
+
+#: classes/admin/views/users.php:23
+msgid "Error getting Users!"
+msgstr "Fejl under hentning af brugere!"
+
+#: classes/admin/views.php:70
+msgid "No array data found!"
+msgstr "Ingen array data fundet!"
+
+#: classes/cpt.php:66 classes/cpt.php:67
+msgid "%s successfully updated."
+msgstr "%s blevet opdateret."
+
+#: classes/cpt.php:68
+msgid "%s successfully created."
+msgstr "%s er blevet oprettet."
+
+#: classes/cpt.php:69
+msgid "%s successfully saved."
+msgstr "%s er blevet gemt."
+
+#: classes/cpt.php:142
+msgid "Default visibility configuration"
+msgstr "Standardkonfigurationen synlighed"
+
+#: classes/cpt.php:147
+msgid "Custom visibility configuration"
+msgstr "Brugerdefinerede synlighed konfiguration"
+
+#: classes/cpt.php:152
+msgid "Visibility group"
+msgstr "Synlighed gruppe"
+
+#: classes/cpt.php:266
+msgid "Visibility Groups"
+msgstr "Synlighed grupper"
+
+#: classes/cpt.php:267
+msgid "Visibility Group"
+msgstr "Synlighed gruppe"
+
+#: classes/cpt.php:269
+msgid "Add New Visibility Group"
+msgstr "Tilføje nye synlighed gruppe"
+
+#: classes/cpt.php:270
+msgid "Edit Visibility Group"
+msgstr "Rediger synlighed gruppe"
+
+#: classes/cpt.php:271
+msgid "New Visibility Group"
+msgstr "Ny synlighed gruppe"
+
+#: classes/cpt.php:272
+msgid "View Visibility Group"
+msgstr "Se synlighed gruppe"
+
+#: classes/cpt.php:273
+msgid "Search Visibility Groups"
+msgstr "Søg synlighed grupper"
+
+#: classes/cpt.php:274
+msgid "No Visibility Groups Found"
+msgstr "Ingen synlighed grupper fundet"
+
+#: classes/cpt.php:275
+msgid "No Visibility Groups Found in Trash"
+msgstr "Ingen synlighed grupper fundet i papirkurven"
+
+#: classes/cpt.php:315 classes/cpt.php:365
+msgid "Visibilities"
+msgstr "Synligheder"
+
+#: classes/cpt.php:316
+msgid "Custom Visibility"
+msgstr "Brugerdefinerede synlighed"
+
+#: classes/cpt.php:317
+msgid "Add New Custom Visibility Configuration"
+msgstr "Tilføj ny brugerdefineret synlighed konfiguration"
+
+#: classes/cpt.php:318
+msgid "Edit Custom Visibility"
+msgstr "Rediger brugerdefinerede synlighed"
+
+#: classes/cpt.php:319
+msgid "New Custom Visibility"
+msgstr "Nye brugerdefinerede synlighed"
+
+#: classes/cpt.php:320
+msgid "View Custom Visibility"
+msgstr "Se brugerdefinerede synlighed"
+
+#: classes/cpt.php:321
+msgid "Search Custom Visibilities"
+msgstr "Søg efter brugerdefinerede synligheder"
+
+#: classes/cpt.php:322
+msgid "No Custom Visibilities Found"
+msgstr "Ingen brugerdefinerede synligheder fundet"
+
+#: classes/cpt.php:323
+msgid "No Custom Visibilities Found in Trash"
+msgstr "Ingen brugerdefinerede synligheder findes i papirkurven"
+
+#: classes/cpt.php:364
+msgid "Default Visibilities"
+msgstr "Standard synligheder"
+
+#: classes/cpt.php:366
+msgid "Default Visibility"
+msgstr "Standard synlighed"
+
+#: classes/cpt.php:367
+msgid "Add New Default Visibility Configuration"
+msgstr "Tilføje nye standardkonfiguration synlighed"
+
+#: classes/cpt.php:368
+msgid "Edit Default Visibility"
+msgstr "Redigere standard synlighed"
+
+#: classes/cpt.php:369
+msgid "New Default Visibility"
+msgstr "Ny standard synlighed"
+
+#: classes/cpt.php:370
+msgid "View Default Visibility"
+msgstr "Se standard synlighed"
+
+#: classes/cpt.php:371
+msgid "Search Default Visibilities"
+msgstr "Søg blandt standard synligheder"
+
+#: classes/cpt.php:372
+msgid "No Default Visibilities Found"
+msgstr "Ingen standard synligheder fundet"
+
+#: classes/cpt.php:373
+msgid "No Default Visibilities Found in Trash"
+msgstr "Ingen standard synligheder findes i papirkurven"
+
+#: classes/output/jm.php:55
+msgid "Listing"
+msgstr "Notering"
+
+#: classes/output/rm.php:138
+msgid "Resume Listings"
+msgstr "Genoptage programoversigter"
+
+#: classes/output/rm.php:140
+msgid "Enable processing of visibility configurations for Resume Manager."
+msgstr "Aktiver behandling af synlighed konfigurationer for CV Manager."
+
+#: classes/output/rm.php:146
+msgid "Resumes"
+msgstr "CV'er"
+
+#: classes/output/rm.php:151
+msgid "Education Placeholder"
+msgstr "Uddannelse pladsholder"
+
+#: classes/output/rm.php:152
+msgid ""
+"Select what field for Education should be replaced with a placeholder (if "
+"configured)"
+msgstr "Vælg hvilket felt for uddannelse bør erstattes af en pladsholder (hvis konfigureret)"
+
+#: classes/output/rm.php:156
+msgid "School name"
+msgstr "Skolens navn"
+
+#: classes/output/rm.php:157 classes/output/rm.php:174
+msgid "Qualification(s)"
+msgstr "Discipliner"
+
+#: classes/output/rm.php:158 classes/output/rm.php:208
+msgid "Start/end date"
+msgstr "Start/slut dato"
+
+#: classes/output/rm.php:159 classes/output/rm.php:192
+#: classes/output/rm.php:209 classes/output/rm.php:242
+msgid "Notes"
+msgstr "Noter"
+
+#: classes/output/rm.php:165
+msgid "School Name"
+msgstr "Skolens navn"
+
+#: classes/output/rm.php:166 classes/output/rm.php:175
+#: classes/output/rm.php:184 classes/output/rm.php:193
+#: classes/output/rm.php:216 classes/output/rm.php:225
+#: classes/output/rm.php:234 classes/output/rm.php:243
+msgid "Clear"
+msgstr "Klart"
+
+#: classes/output/rm.php:167 classes/output/rm.php:176
+#: classes/output/rm.php:185 classes/output/rm.php:194
+#: classes/output/rm.php:217 classes/output/rm.php:226
+#: classes/output/rm.php:235 classes/output/rm.php:244
+msgid ""
+"Should this field be cleared when a placeholder is used? Blank value will be"
+" used (unless selected for placeholder)"
+msgstr "Skal feltet ryddes, når en pladsholder bruges? Tom værdi bruges (medmindre valgt for pladsholder)"
+
+#: classes/output/rm.php:183 classes/output/rm.php:233
+msgid "Start/End Date"
+msgstr "Start/slut dato"
+
+#: classes/output/rm.php:201
+msgid "Experience Placeholder"
+msgstr "Erfaring pladsholder"
+
+#: classes/output/rm.php:202
+msgid ""
+"Select what field for Experience should be replaced with a placeholder (if "
+"configured)"
+msgstr "Vælg hvilket felt for erfaring bør erstattes med en pladsholder (hvis konfigureret)"
+
+#: classes/output/rm.php:206 classes/output/rm.php:215
+msgid "Employer"
+msgstr "Arbejdsgiver"
+
+#: classes/output/rm.php:207 classes/output/rm.php:224
+msgid "Job Title"
+msgstr "Stillingsbetegnelse"
+
+#: classes/output/rm.php:251
+msgid "Links Placeholder"
+msgstr "Links pladsholder"
+
+#: classes/output/rm.php:252
+msgid ""
+"Select what field for Links should be replaced with a placeholder (if "
+"configured)."
+msgstr "Vælg hvilket felt for Links bør erstattes af en pladsholder (hvis konfigureret)."
+
+#: classes/output/rm.php:256 classes/output/rm.php:263
+msgid "URL"
+msgstr "URL-ADRESSE"
+
+#: classes/output/rm.php:257
+msgid "Name"
+msgstr "Navn"
+
+#: classes/output/rm.php:264
+msgid "Replace the URL with value from below"
+msgstr "Erstat URL-adressen med værdien fra neden"
+
+#: classes/output/rm.php:265
+msgid ""
+"If Name is selected above, and this is checked, this will replace the URL in"
+" the HTML link tag with the value from below."
+msgstr "Hvis navnet er markeret ovenfor, og dette afkrydsningsfelt er markeret, vil det erstatte URL i HTML link tag med værdi fra neden."
+
+#: classes/output/rm.php:272
+msgid "URL Placeholder"
+msgstr "URL pladsholder"
+
+#: classes/output/rm.php:274
+msgid ""
+"This value will be used instead of the actual URL if enabled (checked) above"
+" and the placeholder is set as Name"
+msgstr "Denne værdi bruges i stedet for den faktiske URL-adresse, hvis aktiveret (markeret) ovenfor og pladsholderen er angivet som navn"
+
+#: classes/output/rm.php:281
+msgid "URL Prepend"
+msgstr "URL Prepend"
+
+#: classes/output/rm.php:283
+msgid ""
+"If you want to prepend the URL with any value, set it here.  This will be "
+"used regardless of settings above, and only if there is a value set."
+msgstr "Hvis du ønsker at prepend URL med nogen værdi, skal du angive det her.  Dette vil være anvendte uanset indstillinger ovenfor, og kun hvis der er en værdi angivet."
+
+#: classes/output/rm.php:309
+msgid "Candidate"
+msgstr "Kandidat"
+
+#: classes/roles.php:37
+msgid "Anonymous (users not logged in)"
+msgstr "Anonym (brugerne ikke er logget ind)"
+
+#: includes/compatibility.php:68
+msgid ""
+"Your server is using a <strong>VERY OLD</strong> and unsupported version of "
+"PHP, version 5.2 or older. <a href=\"%1$s\" target=\"_blank\">EOL (End of "
+"Life)</a> for PHP 5.2 was about <strong>%2$s ago</strong>!!<br /><br />It is"
+" <strong>strongly</strong> recommended that you upgrade to PHP 5.3 or "
+"newer...you can upgrade PHP or <a href=\"%3$s\">Hide this Notice "
+"Forever!</a><br/><br />Did you know im also the Founder and CEO of Host "
+"Tornado?<br/><a href=\"%4$s\" target=\"_blank\">Contact me</a> for an "
+"exclusive sMyles Plugins customer promo code discount for any shared "
+"<strong>SSD (Solid State Drive)</strong> hosting packages!  Data centers in "
+"Florida USA, Arizona USA, Montreal Canada, and France.  Your site will run "
+"faster than it ever has, or your money back!"
+msgstr "Serveren bruger en <strong>Meget gammel</strong> og ikke-understøttet version af PHP, version 5.2 eller ældre. <a href=\"%1$s\" target=\"_blank\"> EOL (End of Life)</a> for PHP 5.2 var omkring <strong>%2$ s siden</strong>!! <br /> <br /> det er <strong>stærkt</strong> anbefales, at du opgraderer til PHP 5.3 eller nyere... kan du opgradere PHP eller <a href=\"%3$s\"> skjule denne meddelelse Forever!</a> <br/> <br /> vidste du im også grundlægger og CEO af vært Tornado? <br/> <a href=\"%4$s\" target=\"_blank\"> kontakt mig</a> for en eksklusiv sMyles Plugins kunde promo kode rabat til enhver delt <strong>SSD (gedigen påstå Drive)</strong> hosting pakker!  Datacentre i Florida USA, Arizona USA, Montreal Canada og Frankrig.  Dit websted vil køre hurtigere, end det nogensinde har, eller dine penge tilbage!"
+
+#: includes/smyles-update/class-smyles-update.php:71
+msgid "Deactivate Licence"
+msgstr "Deaktivere licens"
+
+#: includes/smyles-update/class-smyles-update.php:83
+msgid "Your licence for <strong>%s</strong> has been activated. Thanks!"
+msgstr "Din licens for <strong>%s</strong> er blevet aktiveret. Tak!"
+
+#: includes/smyles-update/class-smyles-update.php:354
+msgid ""
+"A licence key for %s could not be found. Maybe you forgot to enter a licence"
+" key when setting up %s."
+msgstr "En licensnøglen nemlig %s kunne ikke findes. Måske du har glemt at indtaste en licensnøgle ved opsætning af %s."
+
+#: includes/smyles-update/class-smyles-update.php:358
+msgid "Invalid update request"
+msgstr "Ugyldig opdateringsanmodning"
+
+#: includes/smyles-update/class-smyles-update.php:379
+msgid "Your licence for <strong>%s</strong> has been deactivated."
+msgstr "Din licens for <strong>%s</strong> er blevet deaktiveret."
+
+#: includes/smyles-update/class-smyles-update.php:419
+msgid "Licence"
+msgstr "Licens"
+
+#: includes/smyles-update/class-smyles-update.php:422
+msgid ""
+"Enter your licence key and email and hit return. A valid key is required for"
+" automatic updates.  The key <strong>and email MUST</strong> match the "
+"details you can find on your <a href=\"%s\" target=\"_blank\">My Account</a>"
+" page."
+msgstr "Indtast din licensnøglen og email og tryk return. Der kræves en gyldig nøgle for automatiske opdateringer.  Den centrale <strong>og e-mail skal</strong> matche de detaljer, du kan finde på siden <a href=\"%s\" target=\"_blank\"> Min konto</a>."
+
+#: includes/smyles-update/class-smyles-update.php:443
+msgid "Hide notice"
+msgstr "Skjule varsel"
+
+#: includes/smyles-update/class-smyles-update.php:444
+msgid ""
+"<a href=\"%s\">Please activate your licence key</a> to get updates for "
+"<strong>%s</strong>.  This ensures you have the latest features, bug fixes, "
+"and experience!"
+msgstr "<a href=\"%s\"> venligst Aktivér din licensnøgle</a> til at hente opdateringer til <strong>%s</strong>.  Dette sikrer, at du har de nyeste funktioner, fejlrettelser, og erfaring!"
+
+#: includes/smyles-update/class-smyles-update.php:445
+msgid "Lost your key? <a href=\"%s\">Retrieve it here</a>."
+msgstr "Mistet din nøgle? <a href=\"%s\"> hente det her</a>."
+
+#: wp-job-manager-visibility.php:80
+msgid "Translate"
+msgstr "Oversætte"
+
+#: wp-job-manager-visibility.php:121 wp-job-manager-visibility.php:122
+msgid "Job"
+msgstr "Job"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Job Manager - Visibility"
+msgstr "WP Job Manager - synlighed"
+
+#. Plugin URI of the plugin/theme
+msgid "http://plugins.smyl.es/wp-job-manager-visibility"
+msgstr "http://plugins.smyl.es/WP-job-Manager-Visibility"
+
+#. Description of the plugin/theme
+msgid ""
+"Set fields as visible or hidden (with placeholders) for WP Job Manager "
+"fields using custom groups or user configurations."
+msgstr "Angiv felter som synlige eller skjulte (med pladsholdere) for WP Job Manager felter med brugerdefinerede grupper eller brugerkonfigurationer."
+
+#. Author of the plugin/theme
+msgid "Myles McNamara"
+msgstr "Myles McNamara"
+
+#. Author URI of the plugin/theme
+msgid "http://smyl.es"
+msgstr "http://smyl.es"

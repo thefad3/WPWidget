@@ -1,0 +1,64 @@
+/* Claim post type page styling */
+
+/* Status */
+th#status {
+	width: 100px;
+	text-align: center;
+}
+.post-type-claim .status {
+	vertical-align: middle;
+}
+.post-type-claim .status .status {
+	padding: 3px 15px;
+	color: #FFF;
+	border-radius: 4px;
+	background-color: #34495e;
+}
+.post-type-claim .status .status-pending {
+	background-color: #9b59b6;
+}
+.post-type-claim .status .status-approved {
+	background-color: #2ecc71;
+}
+.post-type-claim .status .status-verifying {
+	background-color: #f39c12;
+}
+.post-type-claim .status .status-declined {
+	background-color: #e74c3c;
+}
+
+/* Order ID */
+th#order_id {
+	width: 100px;
+}
+
+/* Actions */
+th#actions {
+	width: 110px;
+}
+.post-type-claim .actions span {
+	line-height: 28px;
+	font-size: 16px;
+}
+.post-type-claim .actions .button {
+	padding: 0 5px !important;
+}
+
+/* Meta box */
+#claim_data .option-group {
+	margin-top: 15px;
+}
+#claim_data .option-group label {
+	font-weight: bold;
+	width: 120px;
+	display: inline-block;
+}
+#claim_data .option-group select,
+#claim_data .option-group input {
+	min-width: 200px;
+}
+
+/* Settings page */
+.chosen-container {
+	min-width: 250px;
+}

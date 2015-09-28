@@ -1,0 +1,291 @@
+# Copyright (C) 2015 WP Job Manager - Claim Listing
+# This file is distributed under the same license as the WP Job Manager - Claim Listing package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Job Manager - Claim Listing 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-job-manager-claim-listing\n"
+"POT-Creation-Date: 2015-03-11 18:28:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/admin/class-wpjmcl-settings.php:66
+msgid "Claim Listing"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:72
+msgid "Paid or Free"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:73
+msgid "Paid listing claiming"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:74
+msgid ""
+"When checked, users must pay for claiming a listing. (Uses WC defined "
+"product below)"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:81
+msgid "Product"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:82
+msgid ""
+"Product required to buy to claim a listing. (option above must be checked "
+"require this)"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:91
+msgid "Check Order On"
+msgstr ""
+
+#: includes/admin/class-wpjmcl-settings.php:92
+msgid "Select the order status to check the order on claims."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:68
+msgid "Claims "
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:69
+msgid "Claim"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:70 includes/class-wpjmcl-claims.php:71
+msgid "Claims"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:72
+msgid "Add New"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:73
+msgid "Add New Claim"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:74
+msgid "New Claim"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:75
+msgid "Edit Claim"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:76
+msgid "View Claim"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:77
+msgid "All Claims"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:78
+msgid "Search Claims"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:79
+msgid "Parent Claims:"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:80
+msgid "No Claims found."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:81
+msgid "No Claims found in Trash."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:121 includes/class-wpjmcl-claims.php:124
+msgid "Claim updated."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:122
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:123
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:125
+msgid "Claim restored to revision from %s"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:126
+msgid "Claim published."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:127
+msgid "Claim saved."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:128
+msgid "Claim submitted."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:130
+msgid "Claim scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:131
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:133
+msgid "Claim draft updated."
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:137
+msgid "Return to claims"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:162
+#: includes/views/meta-box-claims-data.php:39
+msgid "Status"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:163
+msgid "Title"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:164 includes/class-wpjmcl-listing.php:253
+#: includes/views/meta-box-claims-data.php:16
+msgid "Listing"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:165
+msgid "Order #"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:166
+#: includes/views/meta-box-claims-data.php:32
+msgid "Claimer"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:167
+msgid "Date"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:168
+msgid "Actions"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:198
+msgid "Unknown"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:234
+msgid "Approve"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:236
+msgid "Decline"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:240 includes/class-wpjmcl-claims.php:475
+msgid "View claim"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:259
+msgid "Claim data"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:432
+msgid "Claim listing: %s"
+msgstr ""
+
+#: includes/class-wpjmcl-claims.php:559
+msgid "All claim statuses"
+msgstr ""
+
+#: includes/class-wpjmcl-listing.php:107
+msgid "Claim this listing"
+msgstr ""
+
+#: includes/class-wpjmcl-listing.php:188
+msgid "Your claim has been successfully submitted"
+msgstr ""
+
+#: includes/class-wpjmcl-listing.php:207
+msgid "Please log-in to claim this listing"
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:154
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:161
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:301
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: includes/updater/EDD_SL_Plugin_Updater.php:301
+msgid "Error"
+msgstr ""
+
+#: includes/updater/class-astoundify-updater.php:42
+msgid "License Key"
+msgstr ""
+
+#: includes/updater/class-astoundify-updater.php:43
+msgid "Enter the license key you received with your purchase receipt."
+msgstr ""
+
+#: includes/updater/class-astoundify-updater.php:78
+msgid "Deactivate"
+msgstr ""
+
+#: includes/views/meta-box-claims-data.php:24
+msgid "Order ID"
+msgstr ""
+
+#: wp-job-manager-claim-listing.php:118
+msgid "Approved"
+msgstr ""
+
+#: wp-job-manager-claim-listing.php:119
+msgid "Pending"
+msgstr ""
+
+#: wp-job-manager-claim-listing.php:120
+msgid "Verifying"
+msgstr ""
+
+#: wp-job-manager-claim-listing.php:121
+msgid "Declined"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Job Manager - Claim Listing"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://astoundify.com/downloads/wp-job-manager-claim-listing/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Allow listings to be \"claimed\" to indicate verified ownership. A fee can "
+"be charged using WooCommerce."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Astoundify"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://astoundify.com"
+msgstr ""
